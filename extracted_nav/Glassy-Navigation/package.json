@@ -1,0 +1,12 @@
+{
+  "name": "glassy-navigation-reference",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dependency-free glassy navbar and collapsible sidebar reconstructed from video references",
+  "engines": {"node": ">=18"},
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  }
+}

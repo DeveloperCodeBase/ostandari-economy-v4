@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08080a">
+  <meta name="description" content="Glassy navbar and collapsible sidebar, recreated from the supplied video references. An interactive, responsive navigation collection.">
+  <title>Glassy Navigation — Navbar & Sidebar</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%23212226'/%3E%3Cpath d='M12 18v10M20 11v17M28 15v13' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./navbar.js" defer></script>
+  <script src="./sidebar.js" defer></script>
+  <script src="./demo.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#showcase" data-i18n="skip">Skip to the navigation</a>
+  <div class="page-shell">
+    <header class="demo-header">
+      <div class="demo-heading">
+        <div class="eyebrow"><span class="status-dot"></span><span data-i18n="eyebrow">THE GLASS COLLECTION</span><span class="edition">/ 01—02</span></div>
+        <h1 id="demo-title">Glassy Navbar<span class="title-accent">UI</span></h1>
+      </div>
+      <div class="header-actions">
+        <button type="button" class="language-switch" id="language-switch" aria-label="Switch to Persian"><span lang="fa">فارسی</span><span class="language-symbol" aria-hidden="true">A<span>文</span></span></button>
+        <button type="button" class="quiet-button reset-button" id="reset-button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/></svg><span data-i18n="reset">Reset</span></button>
+      </div>
+    </header>
+
+    <div class="viewer-toolbar">
+      <div class="view-tabs" role="group" aria-label="Navigation view" id="view-tabs">
+        <button type="button" data-view="navbar" aria-pressed="true"><span class="view-number">01</span><span data-i18n="navbar">Navbar</span></button>
+        <button type="button" data-view="sidebar" aria-pressed="false"><span class="view-number">02</span><span data-i18n="sidebar">Sidebar</span></button>
+        <button type="button" data-view="combined" aria-pressed="false"><span class="view-number">03</span><span data-i18n="together">Together</span></button>
+      </div>
+      <span class="viewer-hint" id="viewer-hint">Hover to explore. Click Nav for the sidebar.</span>
+    </div>
+
+    <main class="showcase" id="showcase" data-view="navbar" tabindex="-1" aria-label="Interactive navigation preview">
+      <div class="stage-background" aria-hidden="true"></div>
+      <div class="sidebar-background" aria-hidden="true"></div>
+      <span class="stage-corner corner-tl" aria-hidden="true"></span><span class="stage-corner corner-br" aria-hidden="true"></span>
+      <div class="navbar-position" id="navbar-position"><div id="navbar-mount"></div></div>
+      <button type="button" class="drawer-scrim" id="drawer-scrim" aria-label="Close sidebar" hidden></button>
+      <div class="sidebar-dock" id="sidebar-dock" hidden>
+        <button type="button" class="drawer-close" id="drawer-close" aria-label="Close sidebar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+        <div id="sidebar-mount"></div>
+      </div>
+      <div class="combined-caption" id="combined-caption" aria-hidden="true"><span class="caption-index">NAV / CODEXR</span><p>Glassy<br><span>Navigation.</span></p></div>
+      <section class="section-panel" id="section-panel" aria-labelledby="section-title" hidden>
+        <div class="section-topline"><span class="panel-kicker" data-i18n="workspace">YOUR WORKSPACE</span><button type="button" class="panel-close" id="panel-close" aria-label="Close panel">×</button></div>
+        <h2 id="section-title" tabindex="-1"></h2>
+        <p id="section-description"></p>
+        <div class="section-content" id="section-content"></div>
+      </section>
+      <div class="stage-footer"><span class="stage-caption" id="stage-caption">01 / GLASSY NAVBAR</span><span class="stage-live"><span></span><span data-i18n="interactive">Interactive</span></span></div>
+    </main>
+
+    <footer class="demo-footer">
+      <div class="shortcut-note"><kbd>⌘ / Ctrl</kbd><kbd>K</kbd><span data-i18n="searchHint">to search</span><span class="footer-divider"></span><kbd>Esc</kbd><span data-i18n="closeHint">to close</span></div>
+      <a class="download-link" id="source-download" href="./downloads/Glassy-Navigation-Source.zip" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg><span data-i18n="download">Download source</span></a>
+    </footer>
+  </div>
+
+  <dialog class="login-dialog" id="login-dialog" aria-labelledby="login-title">
+    <button type="button" class="dialog-close" id="login-close" aria-label="Close dialog">×</button>
+    <span class="login-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="demo-pill" data-i18n="preview">DEMO</span>
+    <h2 id="login-title" data-i18n="welcome">Welcome back.</h2>
+    <p data-i18n="loginNote">Try the sign-in interface. No account is created and nothing is sent.</p>
+    <form id="login-form">
+      <label for="login-email" data-i18n="email">Email address</label>
+      <input id="login-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required dir="ltr">
+      <label for="login-password" data-i18n="password">Password</label>
+      <div class="password-field"><input id="login-password" type="password" name="password" placeholder="••••••••" autocomplete="off" minlength="4" required dir="ltr"><button type="button" id="password-toggle" aria-label="Show password" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+      <button type="submit" class="primary-button" data-i18n="signInDemo">Try demo sign-in</button>
+    </form>
+    <p class="login-footnote" data-i18n="localNote">For this preview, use sample details.</p>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><p class="noscript-message">برای اجرای منوها، جاوااسکریپت مرورگر باید روشن باشد. JavaScript is required for interactive navigation.</p></noscript>
+</body>
+</html>

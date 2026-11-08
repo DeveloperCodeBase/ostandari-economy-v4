@@ -1,0 +1,781 @@
+/* ==========================================================================
+   TEHRAN ECON-COMMAND · SOVEREIGN LIQUID-GLASS MATERIAL SYSTEM (V3.0)
+   Architected by: شرکت شبکه هوشمند ابتکار ویستا (Vista Innovation Smart Network Co.)
+   OFFICIAL SOVEREIGN PALETTE: Deep Midnight Navy, Electric Cyan, State Emerald, Treasury Gold
+   PURPLE BAN ENFORCED: Maximum contrast, 100% WCAG AAA text legibility in Dark & Light modes.
+   ========================================================================== */
+
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+
+/* 01 · Official Sovereign Dark Theme (Default) */
+:root,
+html[data-theme="dark"],
+body[data-theme="dark"] {
+  color-scheme: dark;
+  --font-sans: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --radius: 20px;
+  --radius-lg: 26px;
+  --sidebar-width: 280px;
+  --ease: cubic-bezier(.22, .72, .18, 1);
+
+  /* Core Ink & High-Contrast Typography */
+  --text: #ffffff;
+  --muted: #94a3b8;
+  --faint: #64748b;
+
+  /* Sovereign Palette: Cyan, Blue, Emerald, Amber, Rose (NO PURPLE) */
+  --accent: #0284c7;
+  --cyan: #38bdf8;
+  --mint: #10b981;
+  --yellow: #f59e0b;
+  --coral: #f43f5e;
+
+  /* Liquid Glass Tokens (Dark) */
+  --lg-canvas: #060d19;
+  --lg-ink: #ffffff;
+  --lg-secondary: #e2e8f0;
+  --lg-muted: #94a3b8;
+  --lg-faint: #64748b;
+  --lg-accent: #0284c7;
+  --lg-accent-glow: #38bdf8;
+  --lg-cyan: #38bdf8;
+  --lg-emerald: #10b981;
+  --lg-success: #10b981;
+  --lg-warning: #f59e0b;
+  --lg-danger: #f43f5e;
+  --lg-success-bg: rgba(16, 185, 129, 0.15);
+  --lg-warning-bg: rgba(245, 158, 11, 0.15);
+  --lg-danger-bg: rgba(244, 63, 94, 0.15);
+  --lg-accent-bg: rgba(2, 132, 199, 0.18);
+  --lg-blue-bg: rgba(56, 189, 248, 0.16);
+
+  --lg-border: rgba(56, 189, 248, 0.16);
+  --lg-border-strong: rgba(56, 189, 248, 0.32);
+  --lg-divider: rgba(255, 255, 255, 0.1);
+  --lg-edge: rgba(255, 255, 255, 0.35);
+  --lg-edge-soft: rgba(56, 189, 248, 0.1);
+
+  --lg-panel: linear-gradient(135deg, rgba(15, 29, 50, 0.92) 0%, rgba(10, 22, 38, 0.96) 100%);
+  --lg-sidebar: linear-gradient(145deg, rgba(12, 24, 43, 0.95) 0%, rgba(8, 17, 30, 0.98) 100%);
+  --lg-card: linear-gradient(145deg, rgba(16, 32, 54, 0.88) 0%, rgba(10, 22, 38, 0.94) 100%);
+  --lg-inner: linear-gradient(125deg, rgba(255, 255, 255, 0.04), rgba(56, 189, 248, 0.03));
+  --lg-input: rgba(8, 18, 32, 0.8);
+  --lg-hover: rgba(56, 189, 248, 0.1);
+  --lg-selected: linear-gradient(115deg, rgba(2, 132, 199, 0.25), rgba(16, 185, 129, 0.15));
+  --lg-popup: linear-gradient(135deg, #0e2038f8, #091728fc);
+  --lg-solid: #0d1e34;
+  --lg-shadow: 0 24px 60px rgba(1, 6, 15, 0.65), 0 6px 18px rgba(1, 8, 19, 0.4);
+  --lg-card-shadow: 0 12px 30px rgba(0, 5, 16, 0.45), 0 3px 9px rgba(0, 8, 16, 0.25);
+  --lg-card-hover-shadow: 0 20px 42px rgba(2, 132, 199, 0.22), 0 6px 16px rgba(0, 0, 0, 0.35);
+  --lg-sheen: rgba(255, 255, 255, 0.12);
+  --lg-spot: rgba(56, 189, 248, 0.15);
+
+  --lg-orb-one: rgba(2, 132, 199, 0.25);
+  --lg-orb-two: rgba(16, 185, 129, 0.18);
+  --lg-orb-three: rgba(14, 165, 233, 0.16);
+}
+
+/* 02 · Official Executive Porcelain/Slate Light Mode (Crystal Clear, High Contrast, 0% Purple) */
+html[data-theme="light"],
+body[data-theme="light"] {
+  color-scheme: light;
+  --font-sans: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --radius: 20px;
+  --radius-lg: 26px;
+  --sidebar-width: 280px;
+  --ease: cubic-bezier(.22, .72, .18, 1);
+
+  /* Core Ink & High-Contrast Typography */
+  --text: #0f172a;
+  --muted: #475569;
+  --faint: #64748b;
+
+  /* Sovereign Palette (Light): Deep Sapphire Blue, Emerald, Amber, Crimson */
+  --accent: #0284c7;
+  --cyan: #0369a1;
+  --mint: #059669;
+  --yellow: #d97706;
+  --coral: #e11d48;
+
+  /* Liquid Glass Tokens (Light) */
+  --lg-canvas: #f1f5f9;
+  --lg-ink: #0f172a;
+  --lg-secondary: #1e293b;
+  --lg-muted: #475569;
+  --lg-faint: #64748b;
+  --lg-accent: #0284c7;
+  --lg-accent-glow: #0284c7;
+  --lg-cyan: #0369a1;
+  --lg-emerald: #059669;
+  --lg-success: #059669;
+  --lg-warning: #d97706;
+  --lg-danger: #e11d48;
+  --lg-success-bg: rgba(5, 150, 105, 0.12);
+  --lg-warning-bg: rgba(217, 119, 6, 0.12);
+  --lg-danger-bg: rgba(225, 29, 72, 0.12);
+  --lg-accent-bg: rgba(2, 132, 199, 0.12);
+  --lg-blue-bg: rgba(3, 105, 161, 0.12);
+
+  --lg-border: rgba(15, 23, 42, 0.12);
+  --lg-border-strong: rgba(15, 23, 42, 0.22);
+  --lg-divider: rgba(15, 23, 42, 0.08);
+  --lg-edge: rgba(255, 255, 255, 0.95);
+  --lg-edge-soft: rgba(255, 255, 255, 0.6);
+
+  --lg-panel: #ffffff;
+  --lg-sidebar: #ffffff;
+  --lg-card: #ffffff;
+  --lg-inner: #f8fafc;
+  --lg-input: #f8fafc;
+  --lg-hover: #f1f5f9;
+  --lg-selected: linear-gradient(115deg, #e0f2fe, #f0fdf4);
+  --lg-popup: #ffffff;
+  --lg-solid: #f8fafc;
+  --lg-shadow: 0 16px 40px rgba(15, 23, 42, 0.08), 0 4px 12px rgba(15, 23, 42, 0.04);
+  --lg-card-shadow: 0 4px 20px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
+  --lg-card-hover-shadow: 0 12px 30px rgba(2, 132, 199, 0.12), 0 4px 10px rgba(15, 23, 42, 0.06);
+  --lg-sheen: rgba(255, 255, 255, 0.7);
+  --lg-spot: rgba(2, 132, 199, 0.06);
+
+  --lg-orb-one: rgba(2, 132, 199, 0.12);
+  --lg-orb-two: rgba(5, 150, 105, 0.1);
+  --lg-orb-three: rgba(14, 165, 233, 0.08);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  direction: rtl;
+  lang: fa;
+  min-height: 100%;
+  font-family: var(--font-sans);
+  scrollbar-color: var(--lg-border-strong) transparent;
+  scrollbar-width: thin;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  direction: rtl;
+  color: var(--lg-ink);
+  background-color: var(--lg-canvas);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: color .24s ease, background-color .24s ease;
+  overflow-x: hidden;
+}
+
+/* ==========================================================================
+   02.1 · Complete High-Contrast Light Mode Engine
+   Eliminates all unreadable text, low contrast badges, and dark patches.
+   100% WCAG AAA Compliant on crisp porcelain background.
+   ========================================================================== */
+
+html[data-theme="light"],
+body[data-theme="light"] {
+  --lg-canvas: #f8fafc;
+  --lg-ink: #0f172a;
+  --lg-secondary: #1e293b;
+  --lg-muted: #334155;
+  --lg-faint: #475569;
+  --lg-accent: #0284c7;
+  --lg-cyan: #0369a1;
+  --lg-emerald: #047857;
+  --lg-warning: #b45309;
+  --lg-danger: #be123c;
+  --lg-panel: #ffffff;
+  --lg-sidebar: #ffffff;
+  --lg-card: #ffffff;
+  --lg-border: #cbd5e1;
+  --lg-border-strong: #94a3b8;
+  --lg-input: #ffffff;
+  --lg-hover: #f1f5f9;
+  --lg-selected: #e0f2fe;
+}
+
+html[data-theme="light"] h1,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+html[data-theme="light"] h4,
+html[data-theme="light"] h5,
+html[data-theme="light"] h6,
+html[data-theme="light"] strong,
+html[data-theme="light"] b,
+html[data-theme="light"] th {
+  color: #0f172a !important;
+}
+
+html[data-theme="light"] p,
+html[data-theme="light"] td,
+html[data-theme="light"] label,
+html[data-theme="light"] li {
+  color: #1e293b !important;
+}
+
+/* Force text-white to dark ink unless inside an active colored button, link, or featured navy card */
+html[data-theme="light"] .text-white {
+  color: #0f172a !important;
+}
+
+/* Buttons and badges that MUST retain white text on vibrant backgrounds */
+html[data-theme="light"] button.bg-cyan-600,
+html[data-theme="light"] button.bg-cyan-600 *,
+html[data-theme="light"] a.bg-cyan-600,
+html[data-theme="light"] a.bg-cyan-600 *,
+html[data-theme="light"] button.bg-sky-600,
+html[data-theme="light"] button.bg-sky-600 *,
+html[data-theme="light"] a.bg-sky-600,
+html[data-theme="light"] a.bg-sky-600 *,
+html[data-theme="light"] button.bg-emerald-600,
+html[data-theme="light"] button.bg-emerald-600 *,
+html[data-theme="light"] a.bg-emerald-600,
+html[data-theme="light"] a.bg-emerald-600 *,
+html[data-theme="light"] button.bg-rose-600,
+html[data-theme="light"] button.bg-rose-600 *,
+html[data-theme="light"] a.bg-rose-600,
+html[data-theme="light"] a.bg-rose-600 *,
+html[data-theme="light"] button[class*="from-cyan-"],
+html[data-theme="light"] button[class*="from-cyan-"] *,
+html[data-theme="light"] a[class*="from-cyan-"],
+html[data-theme="light"] a[class*="from-cyan-"] *,
+html[data-theme="light"] button[class*="from-blue-"],
+html[data-theme="light"] button[class*="from-blue-"] *,
+html[data-theme="light"] a[class*="from-blue-"],
+html[data-theme="light"] a[class*="from-blue-"] *,
+html[data-theme="light"] button[class*="from-emerald-"],
+html[data-theme="light"] button[class*="from-emerald-"] *,
+html[data-theme="light"] a[class*="from-emerald-"],
+html[data-theme="light"] a[class*="from-emerald-"] *,
+html[data-theme="light"] button[class*="from-rose-"],
+html[data-theme="light"] button[class*="from-rose-"] *,
+html[data-theme="light"] a[class*="from-rose-"],
+html[data-theme="light"] a[class*="from-rose-"] *,
+html[data-theme="light"] .badge-solid,
+html[data-theme="light"] .badge-solid *,
+html[data-theme="light"] .btn-primary,
+html[data-theme="light"] .btn-primary *,
+html[data-theme="light"] .card.featured,
+html[data-theme="light"] .card.featured * {
+  color: #ffffff !important;
+}
+
+/* Grayscale slate classes mapped to ultra-clear typography */
+html[data-theme="light"] .text-slate-100,
+html[data-theme="light"] .text-slate-200,
+html[data-theme="light"] .text-slate-300 {
+  color: #1e293b !important;
+}
+
+html[data-theme="light"] .text-slate-400 {
+  color: #334155 !important;
+}
+
+html[data-theme="light"] .text-slate-500 {
+  color: #475569 !important;
+}
+
+/* Colored accent text enhanced for light backgrounds (deep, crisp contrast) */
+html[data-theme="light"] .text-cyan-300,
+html[data-theme="light"] .text-cyan-400 {
+  color: #0369a1 !important;
+}
+
+html[data-theme="light"] .text-emerald-300,
+html[data-theme="light"] .text-emerald-400 {
+  color: #047857 !important;
+}
+
+html[data-theme="light"] .text-amber-300,
+html[data-theme="light"] .text-amber-400 {
+  color: #b45309 !important;
+}
+
+html[data-theme="light"] .text-rose-300,
+html[data-theme="light"] .text-rose-400 {
+  color: #be123c !important;
+}
+
+html[data-theme="light"] .text-sky-300,
+html[data-theme="light"] .text-sky-400 {
+  color: #0284c7 !important;
+}
+
+/* Background surfaces mapped cleanly to light porcelain */
+html[data-theme="light"] .bg-\[\#0F1423\],
+html[data-theme="light"] .bg-\[\#161D31\],
+html[data-theme="light"] .bg-\[\#070913\],
+html[data-theme="light"] .bg-\[\#0d1224\],
+html[data-theme="light"] .bg-\[\#101b30\],
+html[data-theme="light"] .bg-\[\#091528\],
+html[data-theme="light"] .bg-\[\#0C1020\],
+html[data-theme="light"] .bg-\[\#121933\],
+html[data-theme="light"] .bg-\[\#1C1635\],
+html[data-theme="light"] .bg-\[\#0B0F1D\],
+html[data-theme="light"] .bg-\[\#0A0E1A\],
+html[data-theme="light"] .bg-\[\#0a1829\],
+html[data-theme="light"] .bg-\[\#0b1b30\],
+html[data-theme="light"] .bg-slate-900,
+html[data-theme="light"] .bg-slate-950 {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05) !important;
+}
+
+html[data-theme="light"] .bg-slate-900\/60,
+html[data-theme="light"] .bg-slate-900\/80,
+html[data-theme="light"] .bg-\[\#161D31\]\/80,
+html[data-theme="light"] .bg-\[\#0F1423\]\/70,
+html[data-theme="light"] .bg-\[\#0F1423\]\/90,
+html[data-theme="light"] .bg-\[\#0F1423\]\/95,
+html[data-theme="light"] .bg-\[\#0a1829\]\/95,
+html[data-theme="light"] .bg-\[\#0b1b30\]\/90,
+html[data-theme="light"] .bg-white\/5,
+html[data-theme="light"] .bg-white\/10 {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+/* Gradient containers converted to clean porcelain cards */
+html[data-theme="light"] div[class*="from-\[\#0"],
+html[data-theme="light"] div[class*="from-\[\#1"],
+html[data-theme="light"] div[class*="from-slate-9"],
+html[data-theme="light"] section[class*="from-\[\#0"] {
+  background-image: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%) !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+/* Form inputs & controls in light mode */
+html[data-theme="light"] input:not([type="checkbox"]):not([type="radio"]),
+html[data-theme="light"] select,
+html[data-theme="light"] textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #94a3b8 !important;
+}
+
+html[data-theme="light"] input::placeholder,
+html[data-theme="light"] textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* Table styling in light mode */
+html[data-theme="light"] table {
+  color: #0f172a !important;
+}
+
+html[data-theme="light"] thead tr,
+html[data-theme="light"] table th {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+  font-weight: 700 !important;
+}
+
+html[data-theme="light"] tbody tr {
+  border-color: #e2e8f0 !important;
+}
+
+html[data-theme="light"] tbody tr:hover {
+  background-color: #f1f5f9 !important;
+}
+
+/* Glass components in light mode */
+html[data-theme="light"] .glass-panel,
+html[data-theme="light"] .glass-card,
+html[data-theme="light"] .card:not(.featured) {
+  background: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+}
+
+html[data-theme="light"] .glass-button {
+  background: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html[data-theme="light"] .glass-button:hover {
+  background: #e2e8f0 !important;
+  border-color: #0284c7 !important;
+  color: #0284c7 !important;
+}
+
+html[data-theme="light"] .border-slate-800,
+html[data-theme="light"] .border-slate-700,
+html[data-theme="light"] .border-slate-800\/60,
+html[data-theme="light"] .border-slate-800\/80,
+html[data-theme="light"] .border-white\/10,
+html[data-theme="light"] .border-white\/20 {
+  border-color: #cbd5e1 !important;
+}
+
+html[data-theme="light"] .divide-slate-800,
+html[data-theme="light"] .divide-slate-800\/60 {
+  border-color: #e2e8f0 !important;
+}
+
+/* SVG & Interactive Charts High-Contrast Light Mode */
+html[data-theme="light"] svg text {
+  fill: #0f172a !important;
+}
+html[data-theme="light"] svg text[fill="#94a3b8"] {
+  fill: #334155 !important;
+}
+html[data-theme="light"] svg text[fill="#f1f5fd"],
+html[data-theme="light"] svg text[fill="#ffffff"] {
+  fill: #0f172a !important;
+}
+html[data-theme="light"] svg line {
+  stroke: #cbd5e1 !important;
+}
+html[data-theme="light"] svg circle[fill="var(--lg-canvas)"] {
+  fill: #ffffff !important;
+}
+html[data-theme="light"] svg polygon[stroke="#334155"],
+html[data-theme="light"] svg polygon[stroke="#1e293b"] {
+  stroke: #94a3b8 !important;
+}
+
+/* Responsive tables */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ambient Orbs */
+.liquid-orbs {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.liquid-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(70px);
+  opacity: 0.55;
+  animation: liquid-drift 22s ease-in-out infinite alternate;
+}
+
+.liquid-orb--one {
+  width: 45vw;
+  height: 45vw;
+  top: -12%;
+  left: -8%;
+  background: radial-gradient(circle, var(--lg-orb-one), transparent 70%);
+}
+
+.liquid-orb--two {
+  width: 50vw;
+  height: 50vw;
+  bottom: -15%;
+  right: -10%;
+  background: radial-gradient(circle, var(--lg-orb-two), transparent 70%);
+  animation-duration: 26s;
+  animation-delay: -6s;
+}
+
+.liquid-orb--three {
+  width: 38vw;
+  height: 38vw;
+  top: 35%;
+  left: 30%;
+  background: radial-gradient(circle, var(--lg-orb-three), transparent 70%);
+  animation-duration: 30s;
+  animation-delay: -10s;
+}
+
+@keyframes liquid-drift {
+  from { transform: translate3d(-2%, -2%, 0) scale(1); }
+  to { transform: translate3d(5%, 4%, 0) scale(1.06); }
+}
+
+/* Glass Material Panels & Cards */
+.glass-panel {
+  background: var(--lg-panel);
+  border: 1px solid var(--lg-border);
+  box-shadow: var(--lg-shadow);
+  -webkit-backdrop-filter: blur(24px) saturate(140%);
+  backdrop-filter: blur(24px) saturate(140%);
+  border-radius: var(--radius);
+}
+
+.glass-card,
+.card {
+  position: relative;
+  isolation: isolate;
+  background: var(--lg-card);
+  border: 1px solid var(--lg-border);
+  box-shadow: var(--lg-card-shadow);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  backdrop-filter: blur(20px) saturate(140%);
+  border-radius: var(--radius);
+  color: var(--lg-ink);
+  transition: transform .22s var(--ease), box-shadow .22s ease, border-color .22s ease;
+}
+
+.card:hover,
+.glass-card:hover {
+  border-color: var(--lg-border-strong);
+  box-shadow: var(--lg-card-hover-shadow);
+  transform: translateY(-2px);
+}
+
+/* Featured Sovereign Executive Card (Replacing Violet with Royal Prussian Navy & Electric Cyan) */
+.card.featured {
+  color: #ffffff !important;
+  background:
+    radial-gradient(ellipse at 85% -10%, rgba(56, 189, 248, 0.35), transparent 70%),
+    linear-gradient(135deg, #091b32 0%, #061426 50%, #030d1a 100%);
+  border-color: rgba(56, 189, 248, 0.45);
+  border-block-start-color: rgba(125, 211, 252, 0.7);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.35),
+    0 16px 36px rgba(2, 132, 199, 0.3);
+}
+
+html[data-theme="light"] .card.featured {
+  background:
+    radial-gradient(ellipse at 85% -10%, rgba(56, 189, 248, 0.25), transparent 70%),
+    linear-gradient(135deg, #0f172a 0%, #0369a1 100%);
+  color: #ffffff !important;
+}
+
+.card.featured h1,
+.card.featured h2,
+.card.featured h3,
+.card.featured h4,
+.card.featured strong,
+.card.featured p,
+.card.featured span {
+  color: #ffffff !important;
+}
+
+/* Glass Buttons & Inputs */
+.glass-button {
+  background: var(--lg-hover);
+  border: 1px solid var(--lg-border);
+  color: var(--lg-ink);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.glass-button:hover {
+  background: var(--lg-selected);
+  border-color: var(--lg-border-strong);
+  color: var(--lg-accent);
+}
+
+.glass-input {
+  background: var(--lg-input);
+  border: 1px solid var(--lg-border);
+  color: var(--lg-ink);
+  border-radius: 12px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-input:focus {
+  outline: none;
+  border-color: var(--lg-cyan);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+/* RTL Right-Docked Smooth Sidebar */
+.sidebar {
+  border-radius: var(--radius-lg);
+  background: var(--lg-sidebar);
+  border: 1px solid var(--lg-border);
+  box-shadow: var(--lg-shadow);
+  -webkit-backdrop-filter: blur(28px) saturate(145%);
+  backdrop-filter: blur(28px) saturate(145%);
+  transition: width 0.28s var(--ease), min-width 0.28s var(--ease), transform 0.28s var(--ease);
+}
+
+.sidebar-toggle {
+  position: absolute !important;
+  inset-inline-end: -13px;
+  inset-block-start: 46px;
+  z-index: 50;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--lg-secondary);
+  background: var(--lg-solid) !important;
+  border: 1px solid var(--lg-border-strong) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  cursor: pointer;
+  transition: transform .22s var(--ease), background .2s ease;
+}
+
+.sidebar-toggle:hover {
+  background: var(--lg-accent) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px var(--lg-cyan) !important;
+}
+
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 42px;
+  padding: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  color: var(--lg-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  text-align: right;
+  cursor: pointer;
+  transition: all .16s ease;
+}
+
+.nav-item:hover {
+  color: var(--lg-ink);
+  background: var(--lg-hover);
+  border-color: var(--lg-border);
+}
+
+.nav-item.active {
+  color: var(--lg-ink);
+  background: var(--lg-selected);
+  border-color: var(--lg-border-strong);
+  font-weight: 700;
+}
+
+.nav-item.active::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  width: 3.5px;
+  height: 22px;
+  background: var(--lg-accent);
+  box-shadow: 0 0 10px var(--lg-cyan);
+  border-radius: 4px;
+}
+
+/* 3D Glassy Fan Carousel (.gc-stage, .gc-deck, .gc-card) */
+.gc-stage {
+  position: relative;
+  width: 100%;
+  height: 410px;
+  perspective: 1200px;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.gc-deck {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transform-origin: 50% 45%;
+  transition: transform 700ms var(--ease);
+}
+
+.gc-card {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  width: 250px;
+  height: 330px;
+  border: 1px solid var(--lg-border);
+  border-radius: 22px;
+  background: var(--lg-card);
+  box-shadow: var(--lg-card-shadow);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  transform-style: preserve-3d;
+  transition: transform 650ms var(--ease), opacity 500ms ease, filter 500ms ease, border-color 300ms ease;
+  cursor: pointer;
+}
+
+.gc-card.is-active {
+  border-color: var(--lg-cyan);
+  box-shadow: 0 0 24px rgba(56, 189, 248, 0.35), var(--lg-card-hover-shadow);
+}
+
+/* Radar Pulse Glow */
+.radar-glow {
+  animation: radarPulse 2.8s ease-in-out infinite;
+}
+
+@keyframes radarPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: drop-shadow(0 0 6px var(--lg-cyan));
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 12px var(--lg-accent));
+  }
+}
+
+/* Official Vista Smart Network Footer */
+.vista-official-footer {
+  margin-top: 20px;
+  padding: 14px 20px;
+  border-radius: 18px;
+  border: 1px solid var(--lg-border);
+  background: var(--lg-inner);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 11.5px;
+  color: var(--lg-secondary);
+}
+
+.vista-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  border-radius: 99px;
+  background: var(--lg-accent-bg);
+  border: 1px solid var(--lg-border-strong);
+  color: var(--lg-accent);
+  font-weight: 700;
+}
+
+/* Print Optimization for Governorate Official Documents */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  header,
+  aside,
+  nav,
+  .liquid-orbs,
+  .print\:hidden,
+  footer {
+    display: none !important;
+  }
+  .comprehensive-report-root {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .official-document-canvas {
+    border: 1px solid #94a3b8 !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 20px !important;
+    page-break-inside: avoid;
+  }
+}
+

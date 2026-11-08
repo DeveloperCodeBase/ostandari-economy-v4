@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="600" viewBox="0 0 1440 600" fill="none">
+  <title>Graphite satin folds</title>
+  <desc>Editable vector illustration of softly illuminated monochrome ribbons, with a broad folded crest on the left and sweeping layered folds on the right.</desc>
+  <defs>
+    <linearGradient id="ground" x1="30" y1="-55" x2="442" y2="331" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#57575a"/><stop offset=".32" stop-color="#28282c"/><stop offset=".7" stop-color="#111114"/><stop offset="1" stop-color="#08080b"/>
+    </linearGradient>
+    <radialGradient id="rear-satin" cx="0" cy="0" r="1" gradientTransform="translate(95 -49) rotate(26) scale(459 247)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a7a7a8"/><stop offset=".23" stop-color="#8f8f91"/><stop offset=".44" stop-color="#5c5c60"/><stop offset=".64" stop-color="#303034"/><stop offset="1" stop-color="#19191c"/>
+    </radialGradient>
+    <linearGradient id="rear-turn" x1="487" y1="89" x2="540" y2="114" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#37373b"/><stop offset=".47" stop-color="#616166"/><stop offset=".77" stop-color="#7e7e82"/><stop offset="1" stop-color="#3c3c40"/>
+    </linearGradient>
+    <linearGradient id="rear-rim" x1="526" y1="-3" x2="459" y2="209" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d2d2d3" stop-opacity=".74"/><stop offset=".37" stop-color="#afafb3" stop-opacity=".49"/><stop offset="1" stop-color="#a2a2a7" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="left-cavity" cx="0" cy="0" r="1" gradientTransform="translate(102 139) rotate(31) scale(257 198)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#343438"/><stop offset=".42" stop-color="#242428"/><stop offset=".77" stop-color="#131316"/><stop offset="1" stop-color="#07070a"/>
+    </radialGradient>
+    <linearGradient id="center-fall" x1="309" y1="166" x2="402" y2="184" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#969699"/><stop offset=".12" stop-color="#7c7c80"/><stop offset=".36" stop-color="#555559"/><stop offset=".76" stop-color="#28282d"/><stop offset="1" stop-color="#19191d"/>
+    </linearGradient>
+    <linearGradient id="center-shade" x1="331" y1="124" x2="346" y2="285" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#030305" stop-opacity=".64"/><stop offset=".36" stop-color="#0d0d10" stop-opacity=".1"/><stop offset="1" stop-color="#111115" stop-opacity=".06"/>
+    </linearGradient>
+    <linearGradient id="crest-face" x1="121" y1="27" x2="206" y2="204" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#979798"/><stop offset=".17" stop-color="#868689"/><stop offset=".38" stop-color="#656568"/><stop offset=".59" stop-color="#434347"/><stop offset=".79" stop-color="#2b2b30"/><stop offset="1" stop-color="#1b1b1f"/>
+    </linearGradient>
+    <radialGradient id="crest-light" cx="0" cy="0" r="1" gradientTransform="translate(144 48) rotate(19) scale(173 43)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d5d5d6" stop-opacity=".17"/><stop offset="1" stop-color="#c5c5c8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="crest-rim" x1="47" y1="74" x2="314" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c9c9cb" stop-opacity=".62"/><stop offset=".48" stop-color="#dfdfe0" stop-opacity=".75"/><stop offset=".78" stop-color="#bdbdc0" stop-opacity=".82"/><stop offset="1" stop-color="#707075" stop-opacity=".13"/>
+    </linearGradient>
+    <radialGradient id="inner-fold" cx="0" cy="0" r="1" gradientTransform="translate(146 285) scale(190 263)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#242429"/><stop offset=".65" stop-color="#505057"/><stop offset=".715" stop-color="#a0a0a6"/><stop offset=".739" stop-color="#bcbcc1"/><stop offset=".77" stop-color="#898990"/><stop offset=".815" stop-color="#515159"/><stop offset=".87" stop-color="#28282f"/><stop offset="1" stop-color="#16161b"/>
+    </radialGradient>
+    <linearGradient id="inner-rim" x1="210" y1="109" x2="294" y2="303" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#aaaaaf" stop-opacity=".13"/><stop offset=".38" stop-color="#c5c5c8" stop-opacity=".7"/><stop offset=".77" stop-color="#d0d0d2" stop-opacity=".79"/><stop offset="1" stop-color="#848489" stop-opacity=".1"/>
+    </linearGradient>
+    <radialGradient id="foot-fold" cx="0" cy="0" r="1" gradientTransform="translate(24 234) rotate(14) scale(247 84)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#959597"/><stop offset=".28" stop-color="#77777b"/><stop offset=".55" stop-color="#45454a"/><stop offset="1" stop-color="#18181d"/>
+    </radialGradient>
+    <linearGradient id="foot-rim" x1="-9" y1="242" x2="203" y2="282" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d4d4d6" stop-opacity=".61"/><stop offset=".52" stop-color="#b1b1b5" stop-opacity=".36"/><stop offset="1" stop-color="#737378" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ribbon-one" x1="440" y1="176" x2="473" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8a8a8e"/><stop offset=".16" stop-color="#a7a7aa"/><stop offset=".34" stop-color="#84848a"/><stop offset=".68" stop-color="#505056"/><stop offset="1" stop-color="#24242a"/>
+    </linearGradient>
+    <linearGradient id="ribbon-two" x1="495" y1="184" x2="559" y2="229" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#99999d"/><stop offset=".2" stop-color="#79797f"/><stop offset=".45" stop-color="#55555c"/><stop offset=".73" stop-color="#323239"/><stop offset="1" stop-color="#15151b"/>
+    </linearGradient>
+    <linearGradient id="ribbon-three" x1="550" y1="231" x2="582" y2="272" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#626269"/><stop offset=".2" stop-color="#595960"/><stop offset=".47" stop-color="#3e3e46"/><stop offset=".79" stop-color="#25252d"/><stop offset="1" stop-color="#0d0d14"/>
+    </linearGradient>
+    <linearGradient id="ribbon-four" x1="638" y1="252" x2="670" y2="291" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#606067"/><stop offset=".23" stop-color="#4d4d55"/><stop offset=".59" stop-color="#2f2f38"/><stop offset="1" stop-color="#0b0b12"/>
+    </linearGradient>
+    <linearGradient id="ribbon-five" x1="712" y1="266" x2="743" y2="295" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#494951"/><stop offset=".37" stop-color="#3a3a44"/><stop offset=".78" stop-color="#1c1c26"/><stop offset="1" stop-color="#090911"/>
+    </linearGradient>
+    <linearGradient id="ribbon-sheen" x1="602" y1="-13" x2="398" y2="299" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ededee" stop-opacity=".32"/><stop offset=".36" stop-color="#dddde0" stop-opacity=".35"/><stop offset=".77" stop-color="#d4d4d8" stop-opacity=".5"/><stop offset="1" stop-color="#b1b1ba" stop-opacity=".17"/>
+    </linearGradient>
+    <linearGradient id="right-edge" x1="707" y1="47" x2="465" y2="304" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b8b8bd" stop-opacity=".32"/><stop offset=".43" stop-color="#a0a0a8" stop-opacity=".3"/><stop offset=".84" stop-color="#7a7a85" stop-opacity=".15"/><stop offset="1" stop-color="#555561" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="0" cy="0" r="1" gradientTransform="translate(327 120) scale(493 345)" gradientUnits="userSpaceOnUse">
+      <stop offset=".28" stop-color="#000" stop-opacity="0"/><stop offset=".8" stop-color="#000" stop-opacity=".03"/><stop offset="1" stop-color="#000" stop-opacity=".17"/>
+    </radialGradient>
+    <clipPath id="artboard"><path d="M0 0H720V300H0z"/></clipPath>
+  </defs>
+  <g transform="scale(2)" clip-path="url(#artboard)">
+    <path fill="url(#ground)" d="M0 0H720V300H0z"/>
+
+    <!-- Broad rear sheet and the rolled rim that disappears into the central hollow. -->
+    <path fill="#141417" d="M492-45H651L622 69 541 188 419 300H284L335 122Z"/>
+    <path fill="url(#rear-satin)" d="M-42 79C-13 13 10-5 90-19 203-44 405-57 493-36 522-29 535-15 539 8 547 51 512 95 480 134 429 195 389 252 359 317H-39Z"/>
+    <path fill="url(#rear-turn)" d="M524-32C548-10 553 23 539 58 521 104 476 149 441 197 418 227 395 270 374 317H358C389 246 429 192 480 133 514 93 548 47 539 8 536-10 533-21 524-32Z"/>
+    <path stroke="url(#rear-rim)" stroke-width="1.4" d="M530-24C548 4 544 36 531 66 511 108 468 154 430 210"/>
+    <path fill="#27272b" d="M-18 30C-5 10 14-2 36-7 22-9 10-5-1 1L-22 11Z"/>
+    <path stroke="#bfbfc2" stroke-opacity=".3" stroke-width="1" d="M-6 29C5 14 21 1 40-5"/>
+
+    <!-- The left loop encloses an almost black cavity. -->
+    <path fill="url(#left-cavity)" d="M-44 111C38 83 150 56 219 84 279 108 306 185 311 303H-43Z"/>
+    <path fill="url(#center-fall)" d="M269 41C314 57 365 96 408 143 397 186 352 250 321 319L301 316C321 234 331 114 305 76 295 60 282 48 269 41Z"/>
+    <path fill="url(#center-shade)" d="M275 44C326 67 372 103 408 143 397 185 351 251 321 319L301 316C319 234 330 119 307 80 299 64 288 52 275 44Z"/>
+
+    <!-- Main crest. The upper and inner contours deliberately have different radii. -->
+    <path fill="url(#crest-face)" d="M-50 88C32 70 142 27 205 26 256 22 289 41 305 76 319 105 323 160 322 206L316 311 289 314C294 246 279 190 251 152 228 120 203 101 178 101 110 100 42 133-51 165Z"/>
+    <path fill="url(#crest-light)" d="M-50 88C32 70 142 27 205 26 256 22 289 41 305 76 319 105 323 160 322 206L316 311 289 314C294 246 279 190 251 152 228 120 203 101 178 101 110 100 42 133-51 165Z"/>
+    <path stroke="url(#crest-rim)" stroke-width="1.05" d="M-26 82C43 64 149 25 210 26 264 23 292 45 307 81 316 103 320 132 322 162"/>
+    <path stroke="#c6c6ca" stroke-opacity=".32" stroke-width="1.1" d="M-24 155C46 130 117 100 171 101"/>
+    <path fill="url(#inner-fold)" d="M177 101C210 99 247 126 270 159 302 202 314 266 314 317L284 316C294 256 280 201 251 152 231 124 204 103 177 101Z"/>
+    <path stroke="url(#inner-rim)" stroke-width="1.6" d="M187 103C213 109 235 130 255 160 281 199 294 252 285 310"/>
+    <path stroke="#c1c1c4" stroke-opacity=".23" stroke-width="1" d="M306 82C323 123 326 198 319 275"/>
+
+    <!-- A shallow fold peeks through at the foot of the left loop. -->
+    <path fill="url(#foot-fold)" d="M-29 259C28 232 71 229 111 241 153 254 188 280 229 291 259 299 272 312 290 328H-33Z"/>
+    <path stroke="url(#foot-rim)" stroke-width="1.5" d="M-20 255C35 232 73 231 111 242 152 254 188 280 229 291"/>
+
+    <!-- Right-hand ribbons: separate closed paths keep every shaded fold editable. -->
+    <path fill="url(#ribbon-one)" d="M336 336C369 263 421 203 474 153 531 100 576 50 610-34L647-33C611 65 562 119 509 173 458 226 425 277 402 336Z"/>
+    <path stroke="url(#ribbon-sheen)" stroke-width="1.3" d="M348 312C382 248 427 198 474 153 531 100 576 50 610-34"/>
+    <path fill="url(#ribbon-two)" d="M382 337C419 267 468 213 517 162 572 105 612 49 646-37L694-37C697 18 677 68 634 116 578 180 521 235 488 294L467 340Z"/>
+    <path stroke="url(#ribbon-sheen)" stroke-width="1.25" d="M387 329C422 264 469 212 518 161 572 105 612 49 646-37"/>
+    <path fill="#0b0b10" fill-opacity=".35" d="M461 337C493 265 555 206 604 152 651 101 680 63 691 13 690 56 670 90 638 127 581 193 524 249 496 313L486 340Z"/>
+
+    <path fill="url(#ribbon-three)" d="M432 340C480 254 557 207 619 147 674 94 709 48 745-6L782 9C748 80 700 141 646 187 583 242 530 280 503 342Z"/>
+    <path stroke="url(#right-edge)" stroke-width="1.35" d="M442 323C489 246 560 204 619 147 674 94 709 48 745-6"/>
+    <path fill="#08080e" fill-opacity=".49" d="M487 339C525 270 586 227 642 181 692 139 733 92 760 51 733 105 696 152 651 193 591 247 543 288 521 341Z"/>
+
+    <path fill="url(#ribbon-four)" d="M520 341C562 294 624 254 668 210 712 167 746 126 780 69L803 102C776 167 740 220 695 261 661 293 630 317 612 343Z"/>
+    <path stroke="url(#right-edge)" stroke-width="1.6" d="M529 331C568 289 626 252 668 210 712 167 746 126 780 69"/>
+    <path fill="#0b0b12" fill-opacity=".45" d="M588 341C623 301 672 267 709 225 742 188 764 155 789 111 768 163 742 208 711 243 674 286 646 313 628 342Z"/>
+
+    <path fill="url(#ribbon-five)" d="M632 342C667 308 695 279 725 239 752 203 775 169 799 124L818 185C793 240 765 288 725 343Z"/>
+    <path stroke="#9a9aa4" stroke-opacity=".21" stroke-width="1.3" d="M635 339C670 305 697 276 727 236 752 203 775 169 799 124"/>
+
+    <path fill="url(#vignette)" d="M0 0H720V300H0z"/>
+  </g>
+</svg>
